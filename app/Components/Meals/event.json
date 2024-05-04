@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "name": "Ontario Slam Dunk (3x3)",
+    "imageSrcM1": "/images/Events/BasketballTournemets.jpeg",
+    "description": "This fast-paced tournament features 3v3 basketball games. Test your skills and teamwork against other competitors.",
+    "participantLimit": 24, // Assuming this is the participant limit from the original data
+    "creator": "Ontario Basketball Association", // Placeholder, replace with actual creator
+    "eventAddress": "Toronto, Ontario (Outdoor courts)", // Placeholder, replace with specific address
+    "eventDate": "May 18-19, 2024" // Assuming this is the date from the original data
+  },
+  {
+    "id": 2,
+    "name": "Golden Horseshoe Doubles Challenge",
+    "imageSrcM1": "/images/Events/Tennis_tournement.avif",
+    "description": "Grab your partner and compete in this exciting doubles tennis tournament. Different skill categories will be offered.",
+    "participantLimit": 32, // Assuming this is the participant limit from the original data
+    "creator": "National Tennis Club", // Placeholder, replace with actual creator
+    "eventAddress": "Ottawa, Ontario (Tennis courts at local sports complex)", // Placeholder, replace with specific address
+    "eventDate": "August 15-16, 2024" // Assuming this is the date from the original data
+  },
+  {
+    "id": 3,
+    "name": "Kick for Kids Charity Cup",
+    "imageSrcM1": "/images/Events/Soccer_tournements_ads2.jpg",
+    "description": "This co-ed soccer tournament is a fun way to raise money for a great cause. All skill levels are welcome.",
+    "participantLimit": 16, // Assuming this is the participant limit from the original data
+    "creator": "Kids Charity Foundation", // Placeholder, replace with actual creator
+    "eventAddress": "Windsor, Ontario (Local soccer fields)", // Placeholder, replace with specific address
+    "eventDate": "July 13-14, 2024" // Assuming this is the date from the original data
+  },
+  {
+    "id": 4,
+    "name": "Smash Ontario High Performance Challenge",
+    "imageSrcM1": "/images/Events/badminton_tournements_details.jpg",
+    "description": "This competitive tournament is designed for high-level badminton players.",
+    "participantLimit": 40, // Assuming this is the participant limit from the original data
+    "creator": "Ontario Badminton Association", // Placeholder, replace with actual creator
+    "eventAddress": "London, Ontario (Indoor badminton courts)", // Placeholder, replace with specific address
+    "eventDate": "April 20-21, 2024" // Assuming this is the date from the original data
+  },
+  {
+    "id": 5,
+    "name": "Ontario Major League Baseball (OMLB) Championship",
+    "imageSrcM1": "/images/Events/Baseball_details.jpeg",
+    "description": "This tournament is the culmination of the OMLB league season, with top teams competing for the championship title.",
+    "participantLimit": 8, // Assuming this is the participant limit from the original data
+    "creator": "Ontario Major League Baseball", // Placeholder, replace with actual creator
+    "eventAddress": "Mississauga, Ontario (Various baseball diamonds)", // Placeholder, replace with specific address
+    "eventDate": "July 26-28, 2024" // Assuming this is the date from the original data
+  },
+  {
+    "id": 6,
+    "name": "Thousand Islands Marathon",
+    "imageSrcM1": "/images/Events/Marathon_tourn_details.jpg",
+    "description": "This scenic marathon winds along the beautiful Thousand Islands Parkway, offering stunning views of the St. Lawrence River.",
+    "participantLimit": 500, // Assuming this is the participant limit from the original data
+    "creator": "Thousand Islands Marathon Committee", // Placeholder, replace with actual creator
+    "eventAddress": "Kingston, Ontario (Starting and finishing point along the Thousand Islands Parkway)", // Placeholder, replace with specific address
+    "eventDate": "June 9, 2024" // Assuming this is the date from the original data
+  }
+]

@@ -1,0 +1,156 @@
+.main {  
+    background-color: white;
+    box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.12);
+    border-radius: 12px;
+    position: relative;
+    z-index: 1;
+    max-width: 500px;
+    min-height: 500px;
+    margin-top: 48px;
+    margin-bottom: 48px;
+    padding-top: 0px;
+}
+
+.container{
+    
+    padding-left: 44px;
+    padding-right: 44px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    border-radius: 12px 12px 0 0;
+    
+}
+
+.elements{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.text{
+    box-sizing: border-box;
+    margin: 0;
+    margin-bottom: 32px;
+    text-align: center;
+}
+
+.text h1 {
+    font-size: 24px;
+    line-height: 32px;
+}
+
+
+.button{
+    font-family: "Inter",Helvetica,Arial,-apple-system,sans-serif;
+    font-weight: 500;
+    font-size: 0.875rem;
+    line-height: 1.75;
+    text-transform: uppercase;
+    min-width: 64px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    color: #fff;
+    background-color: #0066EE;
+    width: 100%;
+    border-radius: 4px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: transparent;
+    padding: 8px 20px;
+    box-shadow: none;
+    letter-spacing: 0.015625rem;
+}
+
+.form {
+    display: block;
+    margin-top: 0em;
+}
+
+.form div {
+    margin-bottom: 20px;
+}
+
+.form .details {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 5px;
+  text-align: left;
+}
+.form input {
+  height: 45px;
+  width: 100%;
+  outline: none;
+  font-size: 16px;
+  border-radius: 5px;
+  padding-left: 15px;
+  border: 1px solid #ccc;
+  border-bottom-width: 2px;
+  transition: all 0.3s ease;
+}
+.nav {
+
+    display: flex;
+    position: sticky;
+    left: unset;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    width: auto;
+    margin-top: 100px;
+}
+
+.nav button{
+    border: 2px solid transparent;
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 102, 238);
+    width: 100%;
+    border-radius: 4px;
+    padding: 8px 20px;
+    align-items: center;
+    justify-content: center;
+    margin: 0 25px;
+}
+
+.radioGroup {
+    display: flex;
+    gap: 10px; 
+}
+
+.radioGroup label {
+    display: flex;
+    align-items: center;
+}
+
+.radioGroup input {
+    margin-right: 5px; 
+}
+
+.checkboxGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.checkboxGroup label {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 5px;
+
+}
+
+.checkboxGroup input {
+    margin-right: 5px;
+    height: 25px;
+    width: 25px;
+}
+
+.error {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+  }
+  .datepickerwrapper{
+    width: 30px;
+    height: 30px;
+  }
+  

@@ -1,0 +1,372 @@
+/* Meals.module.css */
+
+.workoutContainer {
+  flex-grow: 1;
+  height: 100%;
+  width: 100%;
+  background-color: #ffffff;
+  border: 2px solid #ccc;
+  border-radius: 25px;
+  padding: 10px;
+  overflow: auto;
+}
+.input-box textarea {
+  background-color: black;
+}
+.MessageSent {
+  font-size: 24px;
+  text-align: center;
+  color: green;
+}
+
+.profile-btn {
+  height: 50px;
+  width: 180px;
+  border-radius: 5px;
+  border: none;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background: linear-gradient(#80ffdb, #64dfdf, #48bfe3, #5390d9, #5e60ce);
+}
+.h1 {
+  font-size: 26px;
+  color: white;
+}
+
+.h2 {
+  font-size: 22px;
+  color: white;
+}
+
+/* contenaire l'image et les description --------------------------------------------- */
+.picCont {
+  height: 100%;
+  width: auto;
+  display: grid;
+  grid-template-columns: repeat(
+    1,
+    1fr
+  ); /* Changed to single column for smaller screens */
+  padding: 20px;
+  gap: 20px;
+  overflow: auto;
+}
+
+.repCont {
+  display: flex;
+  flex-direction: column;
+  height: 400px;
+  width: 300px; /* Changed width to 100% for smaller screens */
+  border: 1px solid #ccc;
+  border-radius: 25px;
+  position: relative;
+}
+
+.repCont img {
+  width: auto;
+  height: 300px;
+  border-radius: 25px 25px 0 0;
+}
+
+.exerciceNumb {
+  justify-content: left;
+  position: absolute;
+  margin-left: 40px;
+  font-size: 28px;
+  font-weight: bold;
+  color: blue;
+  padding: 10px;
+}
+
+.workoutsInfo {
+  justify-content: left;
+  position: absolute;
+  bottom: 20px;
+  left: 20px; /* Added left positioning */
+  display: flex; /* Ensuring flex layout */
+  align-items: flex-end; /* Align items to the bottom */
+  gap: 100px;
+  color: #5b42f3;
+  font-size: 28px;
+  font-weight: bold;
+}
+.searchContainer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end; /* Align items to the right */
+  margin-bottom: 20px;
+}
+.searchInput {
+  flex: 1;
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.searchButton {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-left: 10px;
+}
+
+.searchButton:hover {
+  background-color: #0056b3;
+}
+.CoachButton {
+  background-color: linear-gradient(144deg, #af40ff, #5b42f3 50%, #00ddeb);
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  border-radius: 25px;
+  background-color: #f2f2f2;
+  padding: 8px 16px;
+  border: 2px solid #ccc;
+  cursor: pointer;
+}
+
+/* contenaire de le cercle de progress et ses frere ------------------------------------*/
+.progress {
+  width: 100%;
+  height: auto;
+  border: 5px solid #ccc;
+  border-radius: 25px 25px 0px 0px;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding: 20px;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(to right, #4facfe, #00f2fe);
+}
+
+.progressMeal {
+  width: 100%;
+  height: auto;
+  border: 5px solid #ccc;
+  border-radius: 25px 25px 0px 0px;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding: 20px;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(to right, #ff527a, #ff9575);
+}
+
+/* num de repetition et time needed to finish them in progress*/
+.TimeAndRep {
+  width: auto;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.Time {
+  margin-left: 10px;
+  font-size: 28px;
+  font-weight: bold;
+  color: aliceblue;
+}
+
+.TimeAndRep img {
+  width: 120px;
+  height: 100px;
+}
+/* pictures container in the exercice details pictures*/
+.PicturesWorkout {
+  width: auto;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.PicturesWorkout img {
+  display: flex;
+  flex-direction: row;
+  height: auto;
+  width: auto;
+  border: 1px solid #ccc;
+  border-radius: 25px;
+  position: relative;
+}
+.PictureAdvices {
+  width: auto;
+  height: auto;
+  background-color: white;
+  display: flex;
+}
+.MainWorkoutSheduel {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  padding: 5px;
+  gap: 20px;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.BodyDetailsExercice {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.WorkoutAdvices {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  /* align-items: center; */
+  padding: 50px;
+}
+
+.WorkoutAdvices span {
+  font-size: 35px;
+  color: #00ddeb;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+.WorkoutAdvices p {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* back button */
+.BackButton {
+  align-items: center;
+  background-image: linear-gradient(144deg, #af40ff, #5b42f3 50%, #00ddeb);
+  border: 0;
+  border-radius: 25px;
+  box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+  box-sizing: border-box;
+  color: #ffffff;
+  display: flex;
+  font-family: Phantomsans, sans-serif;
+  font-size: 20px;
+  justify-content: center;
+  line-height: 1em;
+  width: 140px; /* Adjusted width to fit button content */
+  padding: 19px 24px;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  cursor: pointer;
+  position: fixed; /* Position the button relative to the viewport */
+  bottom: 20px; /* Position from the bottom */
+  right: 40px; /* Position from the right */
+}
+
+.BackButton:active,
+.BackButton:hover {
+  outline: 0;
+}
+
+@media (min-width: 1350px) {
+  .picCont {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .MainWorkoutSheduel {
+    grid-template-columns: repeat(3, 3fr);
+  }
+  .PicturesWorkout {
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  .repCont {
+    width: 350px;
+  }
+
+  .PicturesWorkout img {
+    width: 300px;
+  }
+
+  .BackButton {
+    font-size: 24px;
+    min-width: 196px;
+  }
+}
+
+@media (max-width: 1350px) {
+  .picCont {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .MainWorkoutSheduel {
+    grid-template-columns: repeat(3, 3fr);
+  }
+  .PicturesWorkout {
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  .repCont {
+    width: 350px;
+  }
+
+  .PicturesWorkout img {
+    width: 200px;
+  }
+
+  .BackButton {
+    font-size: 24px;
+    min-width: 196px;
+  }
+}
+
+@media (max-width: 768px) {
+  .picCont {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .MainWorkoutSheduel {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .PicturesWorkout {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .PicturesWorkout img {
+    width: 400px;
+  }
+
+  .BackButton {
+    font-size: 24px;
+    min-width: 196px;
+  }
+  .CoachButton {
+    background-image: linear-gradient(144deg, #af40ff, #5b42f3 50%, #00ddeb);
+    border: 2px solid #ccc;
+    cursor: pointer;
+    align-items: center;
+    color: #ffffff;
+  }
+
+  .button::after {
+    content: "\2713";
+    margin-left: 5px;
+  }
+}

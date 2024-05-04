@@ -1,0 +1,235 @@
+/* styles/Sidebar.module.css */
+.sidebar {
+  min-width: 250px;
+  max-width: 350px;
+  background-color: #ffffff;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 0;
+  border: 2px solid #ccc;
+  border-radius: 25px;
+  margin: 10px;
+}
+.menuBtn {
+  position: relative; /* Make position relative for absolute positioning of message count */
+}
+
+/* Style for the message count */
+.messageCount {
+  position: absolute;
+  top: -10px; /* Adjust the top position as needed */
+  right: -10px; /* Adjust the right position as needed */
+  background-color: red; /* Background color of the message count */
+  color: white; /* Text color of the message count */
+  border-radius: 50%; /* Make it round */
+  padding: 5px; /* Add padding for better appearance */
+  font-size: 14px; /* Adjust font size as needed */
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+}
+
+.a {
+  font-weight: 800;
+  font-size: 24px;
+  color: #006ed3;
+  text-decoration: none;
+}
+
+.sidebar .profile {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-direction: column;
+}
+
+.sidebar .profile img {
+  object-fit: cover;
+}
+
+.sidebar .profile a {
+  font-weight: 800;
+  font-size: 20px;
+  color: #006ed3;
+}
+
+.profileImage {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 1px solid #eee;
+  margin-top: 1rem;
+  margin-bottom: 10px;
+}
+
+.age {
+  color: gray;
+}
+
+.details {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 1rem;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.detailsLabel {
+  color: aqua;
+  font-weight: bold;
+}
+.hr {
+  margin: 5px;
+  width: 200px;
+  height: 1px;
+  background-color: gray;
+}
+
+.verticalLine {
+  width: 2px;
+  height: 40px;
+  background-color: gray;
+  margin: 0 1rem;
+}
+
+.menuBtn {
+  width: 32px;
+  height: 32px;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background-color: #d1e6f9;
+  border-radius: 6px;
+  cursor: pointer;
+  display: none;
+}
+
+.menuBtn i {
+  font-size: 18px;
+  color: #208bee;
+}
+
+.sidebar .tabs {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.sidebar .tabs .item {
+  display: flex;
+  gap: 20px;
+  cursor: pointer;
+}
+
+.sidebar .tabs i {
+  color: black;
+  transition: all 0.3s ease;
+}
+
+.sidebar .tabs a {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  font-size: 18px;
+  color: black;
+  position: relative;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.sidebar .tabs .item.active a,
+.sidebar .tabs .item.active i,
+.sidebar .upgrade .link i {
+  color: #369fff;
+}
+
+.sidebar .tabs .item a::after {
+  position: absolute;
+  content: "";
+  width: 0px;
+  height: 0px;
+  background-color: #369fff;
+  right: -30px;
+  border-radius: 50%;
+  top: 0;
+  transform: translateY(116%);
+  transition: all 0.3s ease;
+}
+
+.sidebar .tabs .item.active a::after {
+  width: 8px;
+  height: 8px;
+}
+
+.logoutButton {
+  margin-top: auto;
+}
+
+.logoutButton button {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background-color: #d1e6f9;
+  border-radius: 6px;
+  cursor: pointer;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.logoutButton i {
+  font-size: 18px;
+  color: #208bee;
+  margin-right: 8px;
+}
+
+@media screen and (max-width: 1200px) {
+  .sidebar {
+    padding: 20px 20px 0 20px;
+    max-width: 400px;
+    min-width: 100px;
+  }
+
+  .hr {
+    max-width: 100px;
+    min-width: 50;
+  }
+
+  .sidebar .logo a,
+  .sidebar .tabs p,
+  .sidebar .logoutButton p,
+  .sidebar .profile .data {
+    display: none;
+  }
+  .data {
+    display: flex;
+  }
+  .profileImage {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 1px solid #eee;
+    margin-top: 1rem;
+    margin-bottom: 10px;
+  }
+
+  .sidebar .logoutButton {
+    padding: 5px;
+    margin-bottom: 5px;
+  }
+}
